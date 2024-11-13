@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUMPAD";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&sl 3>;
+            bindings = <&mo 1>, <&tog 3>;
         };
     };
 
