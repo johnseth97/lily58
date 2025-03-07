@@ -19,6 +19,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Layer-4-Momentary {
+            bindings = <&mo 4>;
+            key-positions = <52 55>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -86,6 +95,16 @@
 &trans  &none  &none  &none   &none   &none                     &kp KP_EQUAL  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY       &trans
 &trans  &none  &none  &none   &none   &none   &trans    &trans  &kp DELETE    &kp N0  &trans  &trans  &trans                &trans
                       &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans         &trans       &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans         &trans       &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans         &trans       &trans   &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
             >;
         };
     };
